@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_4ee068f32f6c42fa98abfaf7cab940b4 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_4ee068f32f6c42fa98abfaf7cab940b4" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_4ee068f32f6c42fa98abfaf7cab940b4 = L.map(
+        'map_4ee068f32f6c42fa98abfaf7cab940b4', {
+        center: [48.314775, 25.082925],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_d82fcf4a9ba04b768e95c0e6b32c200b = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_4ee068f32f6c42fa98abfaf7cab940b4);
+    
+            var feature_group_e705a4b5685a48ae87f6606ce5e85213 = L.featureGroup(
+                ).addTo(map_4ee068f32f6c42fa98abfaf7cab940b4);
+        
+    
+        var marker_3772f3f109ed46639788f448d6160eec = L.marker(
+            [48.262023, 25.173841],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_e705a4b5685a48ae87f6606ce5e85213);
+        
+    
+
+                var icon_594146d1a0ce4d20a9e3749d3c087950 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3772f3f109ed46639788f448d6160eec.setIcon(icon_594146d1a0ce4d20a9e3749d3c087950);
+            
+    
+            var popup_f7b0969fcd4e4f6b895ffc26d4d3096d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2263a20764164f7d9f23cc5cc4b9ac69 = $(`<div id="html_2263a20764164f7d9f23cc5cc4b9ac69" style="width: 100.0%; height: 100.0%;">1900 рік св.Трійці</div>`)[0];
+                popup_f7b0969fcd4e4f6b895ffc26d4d3096d.setContent(html_2263a20764164f7d9f23cc5cc4b9ac69);
+            
+
+            marker_3772f3f109ed46639788f448d6160eec.bindPopup(popup_f7b0969fcd4e4f6b895ffc26d4d3096d)
+            ;
+
+            
+        
+    
+        var marker_ead30a1bbaf94a05b12628adaace13bd = L.marker(
+            [48.282076, 25.1616],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_e705a4b5685a48ae87f6606ce5e85213);
+        
+    
+
+                var icon_99713347440f4641a75dc8d282122097 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ead30a1bbaf94a05b12628adaace13bd.setIcon(icon_99713347440f4641a75dc8d282122097);
+            
+    
+            var popup_f42d44b42e66449e89139dadb76ef61b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_79f3d8b313af4979bf6afb00fbca93f7 = $(`<div id="html_79f3d8b313af4979bf6afb00fbca93f7" style="width: 100.0%; height: 100.0%;">1900 рік Покрови Присвятої Діви Марії, Рождества Христового</div>`)[0];
+                popup_f42d44b42e66449e89139dadb76ef61b.setContent(html_79f3d8b313af4979bf6afb00fbca93f7);
+            
+
+            marker_ead30a1bbaf94a05b12628adaace13bd.bindPopup(popup_f42d44b42e66449e89139dadb76ef61b)
+            ;
+
+            
+        
+    
+        var marker_95c89ba1516d4862a3ffd96b3d529620 = L.marker(
+            [48.300325, 24.877719],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_e705a4b5685a48ae87f6606ce5e85213);
+        
+    
+
+                var icon_5a6182892ef6481aa450ffc0dd9ef38d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_95c89ba1516d4862a3ffd96b3d529620.setIcon(icon_5a6182892ef6481aa450ffc0dd9ef38d);
+            
+    
+            var popup_2de43e6323e545f29766f4ffd660d9fd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_179c02d3646a446ba88d02181f7c645d = $(`<div id="html_179c02d3646a446ba88d02181f7c645d" style="width: 100.0%; height: 100.0%;">1900 рік Вознесення Христового</div>`)[0];
+                popup_2de43e6323e545f29766f4ffd660d9fd.setContent(html_179c02d3646a446ba88d02181f7c645d);
+            
+
+            marker_95c89ba1516d4862a3ffd96b3d529620.bindPopup(popup_2de43e6323e545f29766f4ffd660d9fd)
+            ;
+
+            
+        
+</script>
