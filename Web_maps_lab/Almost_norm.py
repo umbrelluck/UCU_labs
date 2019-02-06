@@ -1,5 +1,6 @@
 import folium
 from geopy.geocoders import Nominatim
+from geopy.exc import GeocoderServiceError
 
 geolocator = Nominatim(user_agent='specify_your_app_name_here', timeout=3)
 from geopy.extra.rate_limiter import RateLimiter
@@ -26,39 +27,46 @@ def readFile(year, path="locations.list"):
                 else:
                     diction[place] = [tmp[0][:ind]]
     return diction
-    # leng = 0
-    # for key in diction:
-    #     leng += len(diction[key])
-    # return leng
+
+
+def colorPicker(num):
+    if num > 10:
+        return "green"
+    elif num > 5:
+        return "yellow"
+    return "red"
 
 
 if __name__ == "__main__":
+    ErrorLogs = []
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=2)
     year = input("Enter your year: ")
     places = readFile(year)
 
     mapMov = folium.Map(tiles="Mapbox Control Room")
-    fg_USA = folium.FeatureGroup(name="USA")
-    fg_UA = folium.FeatureGroup(name="UA")
     fg_world = folium.FeatureGroup(name="Whole world")
 
     for loc in places:
         try:
             location = geolocator.geocode(loc)
             if location is None:
+                ErrorLogs.append("InvalidGeopy::InvalidLocation::" + loc + "\n")
                 continue
-            films = ''.join(elem + " --- " for elem in places[loc])
+
+            films = ''.join(elem + "\n" for elem in places[loc])
             fg_world.add_child(
-                folium.Marker(location=[location.latitude, location.longitude], popup=films, icon=folium.Icon()))
-        except Exception:
+                folium.Marker(location=[location.latitude, location.longitude], popup=films,
+                              icon=folium.Icon(icon="cloud", color=colorPicker(len(places[loc])))))
+        except GeocoderServiceError:
+            ErrorLogs.append("InvalidGeopy::GeocoderServiceError::" + loc + "\n")
             continue
     fg_pp = folium.FeatureGroup(name="Population")
     fg_pp.add_child(folium.GeoJson(data=open('world.json', 'r', encoding='utf-8-sig').read(), style_function=lambda x: {
         'fillColor': 'green' if x['properties']['POP2005'] < 10000000 else 'orange' if 10000000 <= x['properties'][
             'POP2005'] < 20000000 else 'red'}))
 
-    # mapMov.add_child(fg_USA)
-    # mapMov.add_child(fg_UA)
     mapMov.add_child(fg_world)
     mapMov.add_child(fg_pp)
     mapMov.save('Map_movies_new.html')
+    for error in ErrorLogs:
+        print(error)
