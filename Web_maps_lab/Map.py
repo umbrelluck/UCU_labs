@@ -4,7 +4,7 @@ from geopy.geocoders import Nominatim
 geolocator = Nominatim(user_agent='specify_your_app_name_here', timeout=3)
 from geopy.extra.rate_limiter import RateLimiter
 
-geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
+geocode = RateLimiter(geolocator.geocode, min_delay_seconds=2)
 
 
 def find(where, what, loc, fg_USA, fg_UA, fg_world):

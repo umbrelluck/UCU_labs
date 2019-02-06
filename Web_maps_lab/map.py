@@ -18,6 +18,17 @@ def find(where, what, loc, fg_USA, fg_UA, fg_world):
             folium.Marker(location=[loc[0], loc[1]], popup=what, icon=folium.Icon()))
 
 
+def genList():
+    with open("locations.list", "rb") as input_file:
+        for line in input_file:
+            tmp = line.strip().split(b"\t")
+            try:
+                tmp = [elem.decode("UTF-8") for elem in tmp]
+            except UnicodeDecodeError:
+                yield None
+            yield tmp
+
+
 def createMap(year):
     mapMov = folium.Map(tiles="Mapbox Control Room")
     input_file = open("locations.list", "rb")
@@ -25,12 +36,11 @@ def createMap(year):
     fg_UA = folium.FeatureGroup(name="UA")
     fg_world = folium.FeatureGroup(name="Whole world")
     count = 0
-    while True:
+    g=genList()
+    for tmp in g:
         try:
-            line = input_file.readline()
-            if year in str(line):
-                tmp = line.strip().split(b"\t")
-                tmp = [elem.decode("UTF-8") for elem in tmp]
+            assert tmp is not None
+            if year in str(tmp):
                 if tmp[-1].endswith(")"):
                     loc = geocoder.yandex(tmp[-2])
                     assert loc is not None
@@ -41,16 +51,13 @@ def createMap(year):
                     assert loc is not None
                     find(tmp[-1], tmp[0], loc.latlng, fg_USA, fg_UA, fg_world)
                     count += 1
-            if count >= 1000000:
-                break
-        except EOFError:
-            break
-        except UnicodeDecodeError:
-            pass
-        except AttributeError:
-            pass
+            if count >= 1000:
+                g.close()
         except AssertionError:
-            pass
+            continue
+        except TypeError:
+            continue
+
     input_file.close()
     mapMov.add_child(fg_USA)
     mapMov.add_child(fg_UA)
