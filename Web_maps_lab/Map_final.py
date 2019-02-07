@@ -22,7 +22,8 @@ def readFile(year, path="locations.list"):
                     place = tmp[-1]
                 ind = tmp[0].index("(")
                 if place in diction:
-                    diction[place].append(tmp[0][:ind])
+                    if tmp[0][:ind] not in diction[place]:
+                        diction[place].append(tmp[0][:ind])
                 else:
                     diction[place] = [tmp[0][:ind]]
     return diction
@@ -38,8 +39,9 @@ def colorPicker(num):
 
 if __name__ == "__main__":
     VisualIndex, ErrorLogs = 1, []
-    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=2)
+    geocode = RateLimiter(geolocator.geocode, min_delay_seconds=1)
     year = input("Enter your year: ")
+    pointsCount, pointsInd = int(input("How many locations do you want? ")), 0
     places = readFile(year)
 
     mapMov = folium.Map(tiles="Mapbox Control Room")
@@ -69,6 +71,10 @@ if __name__ == "__main__":
                 fg_un.add_child(
                     folium.Marker(location=[location.latitude, location.longitude], popup=films,
                                   icon=folium.Icon(icon="cloud", color="red")))
+            pointsInd += 1
+            assert pointsInd < pointsCount
+        except AssertionError:
+            break
         except Exception as e:
             ErrorLogs.append("InvalidGeopy::GeocoderServiceError::" + loc + "\n")
             print(e)
