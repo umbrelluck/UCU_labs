@@ -1,8 +1,9 @@
 import folium
 from geopy.geocoders import Nominatim
-from geopy.exc import GeocoderServiceError
 
-geolocator = Nominatim(user_agent='specify_your_app_name_here', timeout=3)
+# from geopy.exc import GeocoderServiceError
+
+geolocator = Nominatim(user_agent='never', timeout=3)
 from geopy.extra.rate_limiter import RateLimiter
 
 
@@ -11,7 +12,7 @@ def readFile(year, path="locations.list"):
     count = 0
     with open(path, "r", errors="replace") as input_file:
         for line in input_file:
-            while count < 15:
+            if count < 15:
                 count += 1
                 continue
             if year in line:
@@ -38,7 +39,7 @@ def colorPicker(num):
 
 
 if __name__ == "__main__":
-    ErrorLogs = []
+    VisualIndex, ErrorLogs = 1, []
     geocode = RateLimiter(geolocator.geocode, min_delay_seconds=2)
     year = input("Enter your year: ")
     places = readFile(year)
@@ -47,6 +48,8 @@ if __name__ == "__main__":
     fg_world = folium.FeatureGroup(name="Whole world")
 
     for loc in places:
+        print("Working on task " + str(VisualIndex) + "....")
+        VisualIndex += 1
         try:
             location = geolocator.geocode(loc)
             if location is None:
@@ -57,9 +60,11 @@ if __name__ == "__main__":
             fg_world.add_child(
                 folium.Marker(location=[location.latitude, location.longitude], popup=films,
                               icon=folium.Icon(icon="cloud", color=colorPicker(len(places[loc])))))
-        except GeocoderServiceError:
+        except Exception as e:
             ErrorLogs.append("InvalidGeopy::GeocoderServiceError::" + loc + "\n")
+            print(e)
             continue
+
     fg_pp = folium.FeatureGroup(name="Population")
     fg_pp.add_child(folium.GeoJson(data=open('world.json', 'r', encoding='utf-8-sig').read(), style_function=lambda x: {
         'fillColor': 'green' if x['properties']['POP2005'] < 10000000 else 'orange' if 10000000 <= x['properties'][

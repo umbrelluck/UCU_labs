@@ -1,0 +1,2155 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_6f0f925cc0d34e5594e6da82afdc156d {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_6f0f925cc0d34e5594e6da82afdc156d" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_6f0f925cc0d34e5594e6da82afdc156d = L.map(
+        'map_6f0f925cc0d34e5594e6da82afdc156d', {
+        center: [0, 0],
+        zoom: 1,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_e4a3616e867044a5a6cb3df4c37b33d3 = L.tileLayer(
+        'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_6f0f925cc0d34e5594e6da82afdc156d);
+    
+            var feature_group_6b93382192eb4484a9f9bc4a9f5e6c60 = L.featureGroup(
+                ).addTo(map_6f0f925cc0d34e5594e6da82afdc156d);
+        
+    
+        var marker_beff58228e8345a4977d480161a9c46a = L.marker(
+            [30.2507651, -97.7136153],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_ca5af8d297824432a0a4f18f7e968a21 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_beff58228e8345a4977d480161a9c46a.setIcon(icon_ca5af8d297824432a0a4f18f7e968a21);
+            
+    
+            var popup_d01ef249ff494cc3bf9fefdbe8a53a35 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1d6e2e79b221455692dd64672c36af0a = $(`<div id="html_1d6e2e79b221455692dd64672c36af0a" style="width: 100.0%; height: 100.0%;">Town Lake, Austin, Texas, USA</div>`)[0];
+                popup_d01ef249ff494cc3bf9fefdbe8a53a35.setContent(html_1d6e2e79b221455692dd64672c36af0a);
+            
+
+            marker_beff58228e8345a4977d480161a9c46a.bindPopup(popup_d01ef249ff494cc3bf9fefdbe8a53a35)
+            ;
+
+            
+        
+    
+        var marker_f1c8f1b0ad284969b2169a32dcf5c062 = L.marker(
+            [30.27213615, -97.7688868111702],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_eac45f0c1e674d74a1b81104e5fd3791 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f1c8f1b0ad284969b2169a32dcf5c062.setIcon(icon_eac45f0c1e674d74a1b81104e5fd3791);
+            
+    
+            var popup_9bf7cddd10b84ec38307b003dbedc773 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_11fe1e770c9a4381aa45be75faa04ba7 = $(`<div id="html_11fe1e770c9a4381aa45be75faa04ba7" style="width: 100.0%; height: 100.0%;">Texas Rowing Center, Austin, Texas, USA</div>`)[0];
+                popup_9bf7cddd10b84ec38307b003dbedc773.setContent(html_11fe1e770c9a4381aa45be75faa04ba7);
+            
+
+            marker_f1c8f1b0ad284969b2169a32dcf5c062.bindPopup(popup_9bf7cddd10b84ec38307b003dbedc773)
+            ;
+
+            
+        
+    
+        var marker_0a5e8a8368fd4feba758bace10374cf6 = L.marker(
+            [30.3207674, -97.7733474],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_887cd025ffc443bdba7ddffad35a935c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0a5e8a8368fd4feba758bace10374cf6.setIcon(icon_887cd025ffc443bdba7ddffad35a935c);
+            
+    
+            var popup_5fa70d66a67f4c289fae68fdfe61dff3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_17fc153ae86f43d5a76cb09408ae8a8c = $(`<div id="html_17fc153ae86f43d5a76cb09408ae8a8c" style="width: 100.0%; height: 100.0%;">Mount Bonnell, Austin, Texas, USA</div>`)[0];
+                popup_5fa70d66a67f4c289fae68fdfe61dff3.setContent(html_17fc153ae86f43d5a76cb09408ae8a8c);
+            
+
+            marker_0a5e8a8368fd4feba758bace10374cf6.bindPopup(popup_5fa70d66a67f4c289fae68fdfe61dff3)
+            ;
+
+            
+        
+    
+        var marker_0059c84e750d41bd8f90f7a6f79befc5 = L.marker(
+            [30.267301, -97.7396232],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_19751b41e30d4d5e887b135e63164919 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0059c84e750d41bd8f90f7a6f79befc5.setIcon(icon_19751b41e30d4d5e887b135e63164919);
+            
+    
+            var popup_e872db4dd66f47f98d47c2ba8e6ca585 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fe8f4ee14b8f4393bd9ce3f633ac6550 = $(`<div id="html_fe8f4ee14b8f4393bd9ce3f633ac6550" style="width: 100.0%; height: 100.0%;">Alamo Drafthouse Ritz, Austin, Texas, USA</div>`)[0];
+                popup_e872db4dd66f47f98d47c2ba8e6ca585.setContent(html_fe8f4ee14b8f4393bd9ce3f633ac6550);
+            
+
+            marker_0059c84e750d41bd8f90f7a6f79befc5.bindPopup(popup_e872db4dd66f47f98d47c2ba8e6ca585)
+            ;
+
+            
+        
+    
+        var marker_6e886d4d16ad43e4bbd7d041db2872c5 = L.marker(
+            [30.240283, -97.7887279],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_5861226f5e90435ab27f68a2eddf677e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6e886d4d16ad43e4bbd7d041db2872c5.setIcon(icon_5861226f5e90435ab27f68a2eddf677e);
+            
+    
+            var popup_0543fe164f81434f91f3c9e3f7336e4c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2b7841ea4a96452988afcb440f0dd53e = $(`<div id="html_2b7841ea4a96452988afcb440f0dd53e" style="width: 100.0%; height: 100.0%;">Red's Porch, Austin, Texas, USA</div>`)[0];
+                popup_0543fe164f81434f91f3c9e3f7336e4c.setContent(html_2b7841ea4a96452988afcb440f0dd53e);
+            
+
+            marker_6e886d4d16ad43e4bbd7d041db2872c5.bindPopup(popup_0543fe164f81434f91f3c9e3f7336e4c)
+            ;
+
+            
+        
+    
+        var marker_95c51fcecad242b2baf5c8c718e11a62 = L.marker(
+            [30.2020961, -97.6700119],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_f74810ecd9f34981a7722bb8c65141a8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_95c51fcecad242b2baf5c8c718e11a62.setIcon(icon_f74810ecd9f34981a7722bb8c65141a8);
+            
+    
+            var popup_d7bae5ebef424b27a0d78c3493cd6c72 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4c673339da2043ccb95f22a1685d5a3e = $(`<div id="html_4c673339da2043ccb95f22a1685d5a3e" style="width: 100.0%; height: 100.0%;">Barton Springs, Austin, Texas, USA</div>`)[0];
+                popup_d7bae5ebef424b27a0d78c3493cd6c72.setContent(html_4c673339da2043ccb95f22a1685d5a3e);
+            
+
+            marker_95c51fcecad242b2baf5c8c718e11a62.bindPopup(popup_d7bae5ebef424b27a0d78c3493cd6c72)
+            ;
+
+            
+        
+    
+        var marker_f5f4a63b968646969f70f39b60351ce9 = L.marker(
+            [42.0897965, -76.8077338],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_694c2ebe9cd3471997641e57005c1c3f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f5f4a63b968646969f70f39b60351ce9.setIcon(icon_694c2ebe9cd3471997641e57005c1c3f);
+            
+    
+            var popup_03c2105f53f44d63a8f77fc1cdce22f0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_956f64ad3bb841b789bd646aac169657 = $(`<div id="html_956f64ad3bb841b789bd646aac169657" style="width: 100.0%; height: 100.0%;">Elmira, New York, USA</div>`)[0];
+                popup_03c2105f53f44d63a8f77fc1cdce22f0.setContent(html_956f64ad3bb841b789bd646aac169657);
+            
+
+            marker_f5f4a63b968646969f70f39b60351ce9.bindPopup(popup_03c2105f53f44d63a8f77fc1cdce22f0)
+            ;
+
+            
+        
+    
+        var marker_aa4e0966eac94a4e8e5586fc4a55580e = L.marker(
+            [41.8755616, -87.6244212],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_085c2038f59d460ca90283af5db2d744 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aa4e0966eac94a4e8e5586fc4a55580e.setIcon(icon_085c2038f59d460ca90283af5db2d744);
+            
+    
+            var popup_b6aaf004c44348b58e8a35a64c00afde = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_363ea6612f0d47bcbf5cddc1b9fd94ff = $(`<div id="html_363ea6612f0d47bcbf5cddc1b9fd94ff" style="width: 100.0%; height: 100.0%;">Chicago, Illinois, USA</div>`)[0];
+                popup_b6aaf004c44348b58e8a35a64c00afde.setContent(html_363ea6612f0d47bcbf5cddc1b9fd94ff);
+            
+
+            marker_aa4e0966eac94a4e8e5586fc4a55580e.bindPopup(popup_b6aaf004c44348b58e8a35a64c00afde)
+            ;
+
+            
+        
+    
+        var marker_edd756d4c5e64469b27c27ae56f4ccdb = L.marker(
+            [41.8755616, -87.6244212],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_bdab07e2469c457b8775b5b0d581a0a9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_edd756d4c5e64469b27c27ae56f4ccdb.setIcon(icon_bdab07e2469c457b8775b5b0d581a0a9);
+            
+    
+            var popup_d2cc4459aad847009635d55c67e8eca0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0830c912c75d4591ab90083ac74538c6 = $(`<div id="html_0830c912c75d4591ab90083ac74538c6" style="width: 100.0%; height: 100.0%;">Chicago, Illinois, USA</div>`)[0];
+                popup_d2cc4459aad847009635d55c67e8eca0.setContent(html_0830c912c75d4591ab90083ac74538c6);
+            
+
+            marker_edd756d4c5e64469b27c27ae56f4ccdb.bindPopup(popup_d2cc4459aad847009635d55c67e8eca0)
+            ;
+
+            
+        
+    
+        var marker_9983d902ebe04af59df6a85a42231bb8 = L.marker(
+            [34.1729044, -118.3740371],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_4cc6ba6d038d49b0b6e639654f84b2bb = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9983d902ebe04af59df6a85a42231bb8.setIcon(icon_4cc6ba6d038d49b0b6e639654f84b2bb);
+            
+    
+            var popup_6e6673428294436f8c0aa7375e1d7cf5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_472d1db03bfd46f180be6838822b8a08 = $(`<div id="html_472d1db03bfd46f180be6838822b8a08" style="width: 100.0%; height: 100.0%;">North Hollywood, Los Angeles, California, USA</div>`)[0];
+                popup_6e6673428294436f8c0aa7375e1d7cf5.setContent(html_472d1db03bfd46f180be6838822b8a08);
+            
+
+            marker_9983d902ebe04af59df6a85a42231bb8.bindPopup(popup_6e6673428294436f8c0aa7375e1d7cf5)
+            ;
+
+            
+        
+    
+        var marker_8d77361970864d34a953f7e3f0bcf034 = L.marker(
+            [34.0536834, -118.2427669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_82f73c716a444f8b96952dbef887c2a7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8d77361970864d34a953f7e3f0bcf034.setIcon(icon_82f73c716a444f8b96952dbef887c2a7);
+            
+    
+            var popup_76dc4b75365747a2be9595b79983c7c7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_97bab0e88e8d4717b48c3494f2718712 = $(`<div id="html_97bab0e88e8d4717b48c3494f2718712" style="width: 100.0%; height: 100.0%;">Los Angeles, California, USA</div>`)[0];
+                popup_76dc4b75365747a2be9595b79983c7c7.setContent(html_97bab0e88e8d4717b48c3494f2718712);
+            
+
+            marker_8d77361970864d34a953f7e3f0bcf034.bindPopup(popup_76dc4b75365747a2be9595b79983c7c7)
+            ;
+
+            
+        
+    
+        var marker_465ffb09fff04c54973b0262c48bd16c = L.marker(
+            [37.320774, -113.004847586525],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_4ceff901711f4148919898a77b1c0839 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_465ffb09fff04c54973b0262c48bd16c.setIcon(icon_4ceff901711f4148919898a77b1c0839);
+            
+    
+            var popup_4601d93fd6a548ba9a22c7ee2961bd25 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ff3a68be982840f080ff8cb75a8fcdd5 = $(`<div id="html_ff3a68be982840f080ff8cb75a8fcdd5" style="width: 100.0%; height: 100.0%;">Zion National Park, Utah, USA</div>`)[0];
+                popup_4601d93fd6a548ba9a22c7ee2961bd25.setContent(html_ff3a68be982840f080ff8cb75a8fcdd5);
+            
+
+            marker_465ffb09fff04c54973b0262c48bd16c.bindPopup(popup_4601d93fd6a548ba9a22c7ee2961bd25)
+            ;
+
+            
+        
+    
+        var marker_d67d93cb378e41acbd628da54ddc09bc = L.marker(
+            [36.1662859, -115.149225],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_8886c933d385437eb7b8fa4edaeef0f2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d67d93cb378e41acbd628da54ddc09bc.setIcon(icon_8886c933d385437eb7b8fa4edaeef0f2);
+            
+    
+            var popup_1958c55512d94b589b44bf5b40e96fbf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5a0ad410ca624673ac006cc6bbf09d6b = $(`<div id="html_5a0ad410ca624673ac006cc6bbf09d6b" style="width: 100.0%; height: 100.0%;">Las Vegas, Nevada, USA</div>`)[0];
+                popup_1958c55512d94b589b44bf5b40e96fbf.setContent(html_5a0ad410ca624673ac006cc6bbf09d6b);
+            
+
+            marker_d67d93cb378e41acbd628da54ddc09bc.bindPopup(popup_1958c55512d94b589b44bf5b40e96fbf)
+            ;
+
+            
+        
+    
+        var marker_33114be9f5ca4a339681b34f71d0e6be = L.marker(
+            [36.4914385, -117.102293607719],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_7d27ec49a8ce4027a7409ec777faa684 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_33114be9f5ca4a339681b34f71d0e6be.setIcon(icon_7d27ec49a8ce4027a7409ec777faa684);
+            
+    
+            var popup_b4e0889557e345f989a35fae342a3f88 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d8ceeb9f3b174d6eb473b24d312a4398 = $(`<div id="html_d8ceeb9f3b174d6eb473b24d312a4398" style="width: 100.0%; height: 100.0%;">Death Valley National Park, California, USA</div>`)[0];
+                popup_b4e0889557e345f989a35fae342a3f88.setContent(html_d8ceeb9f3b174d6eb473b24d312a4398);
+            
+
+            marker_33114be9f5ca4a339681b34f71d0e6be.bindPopup(popup_b4e0889557e345f989a35fae342a3f88)
+            ;
+
+            
+        
+    
+        var marker_894fd7c7ae194ddeb0bc695e322c1f2f = L.marker(
+            [37.84054795, -119.516587798025],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_348da6aaff5b43018ebe168355e229ef = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_894fd7c7ae194ddeb0bc695e322c1f2f.setIcon(icon_348da6aaff5b43018ebe168355e229ef);
+            
+    
+            var popup_b659e38e7cb644a09ea93dfb50e13521 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a6cd32c9515f41deb30f3c2c9b3e06af = $(`<div id="html_a6cd32c9515f41deb30f3c2c9b3e06af" style="width: 100.0%; height: 100.0%;">Yosemite National Park, California, USA</div>`)[0];
+                popup_b659e38e7cb644a09ea93dfb50e13521.setContent(html_a6cd32c9515f41deb30f3c2c9b3e06af);
+            
+
+            marker_894fd7c7ae194ddeb0bc695e322c1f2f.bindPopup(popup_b659e38e7cb644a09ea93dfb50e13521)
+            ;
+
+            
+        
+    
+        var marker_28423ee363354fc694d7589aaa1cd1bb = L.marker(
+            [34.0536834, -118.2427669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_e789d2c4881e4a57a34b032fc66874c5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_28423ee363354fc694d7589aaa1cd1bb.setIcon(icon_e789d2c4881e4a57a34b032fc66874c5);
+            
+    
+            var popup_fdd55bd6af6d4fe9ae74efcc4f9643f1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_abe965680f974be0a00a14302daaa1b7 = $(`<div id="html_abe965680f974be0a00a14302daaa1b7" style="width: 100.0%; height: 100.0%;">Los Angeles, California, USA</div>`)[0];
+                popup_fdd55bd6af6d4fe9ae74efcc4f9643f1.setContent(html_abe965680f974be0a00a14302daaa1b7);
+            
+
+            marker_28423ee363354fc694d7589aaa1cd1bb.bindPopup(popup_fdd55bd6af6d4fe9ae74efcc4f9643f1)
+            ;
+
+            
+        
+    
+        var marker_52de76fd258a402397ae5a79e9837326 = L.marker(
+            [36.9749416, -122.0285259],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_360c8b9d891a42959269ff26b977b214 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_52de76fd258a402397ae5a79e9837326.setIcon(icon_360c8b9d891a42959269ff26b977b214);
+            
+    
+            var popup_8a6f53d24cf34e40b13fb44778175dd9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6e86e213d6f043d698bb846a3f7ea424 = $(`<div id="html_6e86e213d6f043d698bb846a3f7ea424" style="width: 100.0%; height: 100.0%;">Santa Cruz, California, USA</div>`)[0];
+                popup_8a6f53d24cf34e40b13fb44778175dd9.setContent(html_6e86e213d6f043d698bb846a3f7ea424);
+            
+
+            marker_52de76fd258a402397ae5a79e9837326.bindPopup(popup_8a6f53d24cf34e40b13fb44778175dd9)
+            ;
+
+            
+        
+    
+        var marker_5994f146c3c24bacaae9ab85e9d0deca = L.marker(
+            [40.7308619, -73.9871558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_0aadd66bc3dd4c9c81abcb06026ce463 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5994f146c3c24bacaae9ab85e9d0deca.setIcon(icon_0aadd66bc3dd4c9c81abcb06026ce463);
+            
+    
+            var popup_d3f0dc50cd6e492ab4aa163a2767fd9d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ddae7628a7aa4db48e036a37aaf4cff4 = $(`<div id="html_ddae7628a7aa4db48e036a37aaf4cff4" style="width: 100.0%; height: 100.0%;">New York City, New York, USA</div>`)[0];
+                popup_d3f0dc50cd6e492ab4aa163a2767fd9d.setContent(html_ddae7628a7aa4db48e036a37aaf4cff4);
+            
+
+            marker_5994f146c3c24bacaae9ab85e9d0deca.bindPopup(popup_d3f0dc50cd6e492ab4aa163a2767fd9d)
+            ;
+
+            
+        
+    
+        var marker_7c7d9c02eab346a1aeb21b8333388285 = L.marker(
+            [40.7308619, -73.9871558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_3bad9a0f8cd74798b796735f7951c417 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7c7d9c02eab346a1aeb21b8333388285.setIcon(icon_3bad9a0f8cd74798b796735f7951c417);
+            
+    
+            var popup_71a9a8e4c2364e4da3a3fdeafdac8134 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_eb89f996282e4737899bc46f0e6d303c = $(`<div id="html_eb89f996282e4737899bc46f0e6d303c" style="width: 100.0%; height: 100.0%;">New York City, New York, USA</div>`)[0];
+                popup_71a9a8e4c2364e4da3a3fdeafdac8134.setContent(html_eb89f996282e4737899bc46f0e6d303c);
+            
+
+            marker_7c7d9c02eab346a1aeb21b8333388285.bindPopup(popup_71a9a8e4c2364e4da3a3fdeafdac8134)
+            ;
+
+            
+        
+    
+        var marker_47e125f0dc064b9bb6638242592771c9 = L.marker(
+            [41.8755616, -87.6244212],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_ab1260934b2549968fa21037b65933bc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_47e125f0dc064b9bb6638242592771c9.setIcon(icon_ab1260934b2549968fa21037b65933bc);
+            
+    
+            var popup_d608aea836f14666bd6cbcd41b49fa41 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6023de2c310147908c0eb1b244c4d115 = $(`<div id="html_6023de2c310147908c0eb1b244c4d115" style="width: 100.0%; height: 100.0%;">Chicago, Illinois, USA</div>`)[0];
+                popup_d608aea836f14666bd6cbcd41b49fa41.setContent(html_6023de2c310147908c0eb1b244c4d115);
+            
+
+            marker_47e125f0dc064b9bb6638242592771c9.bindPopup(popup_d608aea836f14666bd6cbcd41b49fa41)
+            ;
+
+            
+        
+    
+        var marker_d799186232824f6290c20d73c458b14f = L.marker(
+            [39.7837304, -100.4458825],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_b412914137ba446abe3ea669d10b3147 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d799186232824f6290c20d73c458b14f.setIcon(icon_b412914137ba446abe3ea669d10b3147);
+            
+    
+            var popup_fcc6745495a64c7d93efac79854b0e54 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_162c8c5ced1f4542b979c24375ecabe7 = $(`<div id="html_162c8c5ced1f4542b979c24375ecabe7" style="width: 100.0%; height: 100.0%;">USA</div>`)[0];
+                popup_fcc6745495a64c7d93efac79854b0e54.setContent(html_162c8c5ced1f4542b979c24375ecabe7);
+            
+
+            marker_d799186232824f6290c20d73c458b14f.bindPopup(popup_fcc6745495a64c7d93efac79854b0e54)
+            ;
+
+            
+        
+    
+        var marker_80990e4858ba46d9a5408e3c26dbbc65 = L.marker(
+            [39.7837304, -100.4458825],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_312553281b25495ea8e15eb05ab0f4d5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_80990e4858ba46d9a5408e3c26dbbc65.setIcon(icon_312553281b25495ea8e15eb05ab0f4d5);
+            
+    
+            var popup_e972cbef77934878ae88d1a793b55ec9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dbb9a1d42de04134ae921a7ffafdfa2c = $(`<div id="html_dbb9a1d42de04134ae921a7ffafdfa2c" style="width: 100.0%; height: 100.0%;">USA</div>`)[0];
+                popup_e972cbef77934878ae88d1a793b55ec9.setContent(html_dbb9a1d42de04134ae921a7ffafdfa2c);
+            
+
+            marker_80990e4858ba46d9a5408e3c26dbbc65.bindPopup(popup_e972cbef77934878ae88d1a793b55ec9)
+            ;
+
+            
+        
+    
+        var marker_e096f223743a424baad116660416fa19 = L.marker(
+            [39.7837304, -100.4458825],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_73808bd8daa54a4497f7646d945d0ad1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e096f223743a424baad116660416fa19.setIcon(icon_73808bd8daa54a4497f7646d945d0ad1);
+            
+    
+            var popup_20e63688cc0545dfaaba0dedfa29553d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6ddde9203a1c47cc856ad76c492fd57a = $(`<div id="html_6ddde9203a1c47cc856ad76c492fd57a" style="width: 100.0%; height: 100.0%;">USA</div>`)[0];
+                popup_20e63688cc0545dfaaba0dedfa29553d.setContent(html_6ddde9203a1c47cc856ad76c492fd57a);
+            
+
+            marker_e096f223743a424baad116660416fa19.bindPopup(popup_20e63688cc0545dfaaba0dedfa29553d)
+            ;
+
+            
+        
+    
+        var marker_552a474a472242368c9dcb4e1590b9fa = L.marker(
+            [37.7781634, -122.387559],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_040e8c6edc564057a33b9b1f81035fb4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_552a474a472242368c9dcb4e1590b9fa.setIcon(icon_040e8c6edc564057a33b9b1f81035fb4);
+            
+    
+            var popup_2c0d9956f5244c7885c2c14bb9cb41b3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9e8bdad35f644f818f10f3c3711ce4e3 = $(`<div id="html_9e8bdad35f644f818f10f3c3711ce4e3" style="width: 100.0%; height: 100.0%;">AT&T Park, San Francisco, California, USA</div>`)[0];
+                popup_2c0d9956f5244c7885c2c14bb9cb41b3.setContent(html_9e8bdad35f644f818f10f3c3711ce4e3);
+            
+
+            marker_552a474a472242368c9dcb4e1590b9fa.bindPopup(popup_2c0d9956f5244c7885c2c14bb9cb41b3)
+            ;
+
+            
+        
+    
+        var marker_acbcf201b89a4bbfab596cd0007b634b = L.marker(
+            [37.7781634, -122.387559],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_0c0a6f1c2b594211a141e96a202f1073 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_acbcf201b89a4bbfab596cd0007b634b.setIcon(icon_0c0a6f1c2b594211a141e96a202f1073);
+            
+    
+            var popup_5a41ac906ef3485d9d856fe383f69e5e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_20fc6993aa794a5187e4a20d7c57b78f = $(`<div id="html_20fc6993aa794a5187e4a20d7c57b78f" style="width: 100.0%; height: 100.0%;">AT&T Park, San Francisco, California, USA</div>`)[0];
+                popup_5a41ac906ef3485d9d856fe383f69e5e.setContent(html_20fc6993aa794a5187e4a20d7c57b78f);
+            
+
+            marker_acbcf201b89a4bbfab596cd0007b634b.bindPopup(popup_5a41ac906ef3485d9d856fe383f69e5e)
+            ;
+
+            
+        
+    
+        var marker_09c82e4e2d1c4ad5b9f604d8343fd98b = L.marker(
+            [37.7781634, -122.387559],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_8e2e844d28a642ba9770c0f2a0fac3b4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_09c82e4e2d1c4ad5b9f604d8343fd98b.setIcon(icon_8e2e844d28a642ba9770c0f2a0fac3b4);
+            
+    
+            var popup_7cccce25941244eb85ae68f87676bf0e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_803a28127bdc4c1f974a4a3c901ce17c = $(`<div id="html_803a28127bdc4c1f974a4a3c901ce17c" style="width: 100.0%; height: 100.0%;">AT&T Park, San Francisco, California, USA</div>`)[0];
+                popup_7cccce25941244eb85ae68f87676bf0e.setContent(html_803a28127bdc4c1f974a4a3c901ce17c);
+            
+
+            marker_09c82e4e2d1c4ad5b9f604d8343fd98b.bindPopup(popup_7cccce25941244eb85ae68f87676bf0e)
+            ;
+
+            
+        
+    
+        var marker_10cabf39adc44f798df83a225b5001f9 = L.marker(
+            [40.7308619, -73.9871558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_6b93382192eb4484a9f9bc4a9f5e6c60);
+        
+    
+
+                var icon_5bbbbb3c977241d28845b35d6fecd74d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_10cabf39adc44f798df83a225b5001f9.setIcon(icon_5bbbbb3c977241d28845b35d6fecd74d);
+            
+    
+            var popup_56ef2b4c51fa4ca888ebbb811a24dc25 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_237e82ca9d3d4f81bd77b7178c0b60ad = $(`<div id="html_237e82ca9d3d4f81bd77b7178c0b60ad" style="width: 100.0%; height: 100.0%;">New York City, New York, USA</div>`)[0];
+                popup_56ef2b4c51fa4ca888ebbb811a24dc25.setContent(html_237e82ca9d3d4f81bd77b7178c0b60ad);
+            
+
+            marker_10cabf39adc44f798df83a225b5001f9.bindPopup(popup_56ef2b4c51fa4ca888ebbb811a24dc25)
+            ;
+
+            
+        
+    
+            var feature_group_e815da76930e4d72ab514393b0b0a8c2 = L.featureGroup(
+                ).addTo(map_6f0f925cc0d34e5594e6da82afdc156d);
+        
+    
+            var feature_group_8e13e832c1704dfa91b93c5092d79b3b = L.featureGroup(
+                ).addTo(map_6f0f925cc0d34e5594e6da82afdc156d);
+        
+    
+        var marker_6c5cb85409ce48eca598c3e4934509ec = L.marker(
+            [-23.9471539, -46.3254357],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_a7d1e9fe97a346cca31b40b0ed414bdf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6c5cb85409ce48eca598c3e4934509ec.setIcon(icon_a7d1e9fe97a346cca31b40b0ed414bdf);
+            
+    
+            var popup_e8c84b9541c745e2a5e29940d05ff7bd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8281396126b54297aacf9a951a19b415 = $(`<div id="html_8281396126b54297aacf9a951a19b415" style="width: 100.0%; height: 100.0%;">Canal 3, Santos, SP, Brazil</div>`)[0];
+                popup_e8c84b9541c745e2a5e29940d05ff7bd.setContent(html_8281396126b54297aacf9a951a19b415);
+            
+
+            marker_6c5cb85409ce48eca598c3e4934509ec.bindPopup(popup_e8c84b9541c745e2a5e29940d05ff7bd)
+            ;
+
+            
+        
+    
+        var marker_cd415b2c73454d74a173346f2687da44 = L.marker(
+            [41.894802, 12.4853384],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_5de0b472efa24f69a7b3d8f89c1021af = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cd415b2c73454d74a173346f2687da44.setIcon(icon_5de0b472efa24f69a7b3d8f89c1021af);
+            
+    
+            var popup_c2224bdde45140b18d3444aba8bfd828 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_204fb2a23b7a428a9012136a973ac0f4 = $(`<div id="html_204fb2a23b7a428a9012136a973ac0f4" style="width: 100.0%; height: 100.0%;">Rome, Italy</div>`)[0];
+                popup_c2224bdde45140b18d3444aba8bfd828.setContent(html_204fb2a23b7a428a9012136a973ac0f4);
+            
+
+            marker_cd415b2c73454d74a173346f2687da44.bindPopup(popup_c2224bdde45140b18d3444aba8bfd828)
+            ;
+
+            
+        
+    
+        var marker_c71dea356bac40c6850d21cf9666abb0 = L.marker(
+            [-33.928992, 18.417396],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_08290e6f8f2f41bea11239d5873c4951 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c71dea356bac40c6850d21cf9666abb0.setIcon(icon_08290e6f8f2f41bea11239d5873c4951);
+            
+    
+            var popup_f9a90989ba2b4b5c9fe0f03314d744da = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8391fe37d77a4e658010e0873a146907 = $(`<div id="html_8391fe37d77a4e658010e0873a146907" style="width: 100.0%; height: 100.0%;">Cape Town, South Africa</div>`)[0];
+                popup_f9a90989ba2b4b5c9fe0f03314d744da.setContent(html_8391fe37d77a4e658010e0873a146907);
+            
+
+            marker_c71dea356bac40c6850d21cf9666abb0.bindPopup(popup_f9a90989ba2b4b5c9fe0f03314d744da)
+            ;
+
+            
+        
+    
+        var marker_d7cbdc25e3ad41158c798f847fbf4166 = L.marker(
+            [-26.205, 28.049722],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_d3e06aef9b6045f0bb7774b3e3489a6c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d7cbdc25e3ad41158c798f847fbf4166.setIcon(icon_d3e06aef9b6045f0bb7774b3e3489a6c);
+            
+    
+            var popup_2cc0809219534cba984a018b530d3537 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b54c1fbdd02747dda69957aa61721773 = $(`<div id="html_b54c1fbdd02747dda69957aa61721773" style="width: 100.0%; height: 100.0%;">Johannesburg, South Africa</div>`)[0];
+                popup_2cc0809219534cba984a018b530d3537.setContent(html_b54c1fbdd02747dda69957aa61721773);
+            
+
+            marker_d7cbdc25e3ad41158c798f847fbf4166.bindPopup(popup_2cc0809219534cba984a018b530d3537)
+            ;
+
+            
+        
+    
+        var marker_bac9b97152ed41bea81305a5868931bd = L.marker(
+            [46.5286176, 10.4532056],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_74e22a61ad9d4e7f89f55d5389d322d4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bac9b97152ed41bea81305a5868931bd.setIcon(icon_74e22a61ad9d4e7f89f55d5389d322d4);
+            
+    
+            var popup_e7056aa25f66414aa9c7e4a4e4518d3a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dc96b80ad1ba46a1aeaddb6ed8440d8b = $(`<div id="html_dc96b80ad1ba46a1aeaddb6ed8440d8b" style="width: 100.0%; height: 100.0%;">Passo dello Stelvio, South Tyrol, Italy</div>`)[0];
+                popup_e7056aa25f66414aa9c7e4a4e4518d3a.setContent(html_dc96b80ad1ba46a1aeaddb6ed8440d8b);
+            
+
+            marker_bac9b97152ed41bea81305a5868931bd.bindPopup(popup_e7056aa25f66414aa9c7e4a4e4518d3a)
+            ;
+
+            
+        
+    
+        var marker_5f8f869f8b5746268114e7574bc3e4f9 = L.marker(
+            [51.3201891, -0.5564726],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_eaaa4a526c22494f97cecbb3acf7e94b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5f8f869f8b5746268114e7574bc3e4f9.setIcon(icon_eaaa4a526c22494f97cecbb3acf7e94b);
+            
+    
+            var popup_d80fc8e8906f44b8af68a212c504fcf2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f0e4acb9d0344636a7ac9effebcfad6e = $(`<div id="html_f0e4acb9d0344636a7ac9effebcfad6e" style="width: 100.0%; height: 100.0%;">Woking, Surrey, England, UK</div>`)[0];
+                popup_d80fc8e8906f44b8af68a212c504fcf2.setContent(html_f0e4acb9d0344636a7ac9effebcfad6e);
+            
+
+            marker_5f8f869f8b5746268114e7574bc3e4f9.bindPopup(popup_d80fc8e8906f44b8af68a212c504fcf2)
+            ;
+
+            
+        
+    
+        var marker_ae84309ece5b4fd0a8f111a41de28625 = L.marker(
+            [23.99764435, 53.6439097569213],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_e903d8fc4deb4777a3f6f20ef6bd0d61 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ae84309ece5b4fd0a8f111a41de28625.setIcon(icon_e903d8fc4deb4777a3f6f20ef6bd0d61);
+            
+    
+            var popup_4ea51d26f57f40f0aa4b0d077a5a8955 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_adcc4f5d05b041ac98550abb75e455ef = $(`<div id="html_adcc4f5d05b041ac98550abb75e455ef" style="width: 100.0%; height: 100.0%;">Abu Dhabi, United Arab Emirates</div>`)[0];
+                popup_4ea51d26f57f40f0aa4b0d077a5a8955.setContent(html_adcc4f5d05b041ac98550abb75e455ef);
+            
+
+            marker_ae84309ece5b4fd0a8f111a41de28625.bindPopup(popup_4ea51d26f57f40f0aa4b0d077a5a8955)
+            ;
+
+            
+        
+    
+        var marker_c39e0ace4906427689199b50bdcc7fc9 = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_fc79675678184eef8e76a1396f2876af = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c39e0ace4906427689199b50bdcc7fc9.setIcon(icon_fc79675678184eef8e76a1396f2876af);
+            
+    
+            var popup_f01e44e3c2464d9d9d849e69ec0db9dc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8c7d0ab945c64075bd0096e6bd42732b = $(`<div id="html_8c7d0ab945c64075bd0096e6bd42732b" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_f01e44e3c2464d9d9d849e69ec0db9dc.setContent(html_8c7d0ab945c64075bd0096e6bd42732b);
+            
+
+            marker_c39e0ace4906427689199b50bdcc7fc9.bindPopup(popup_f01e44e3c2464d9d9d849e69ec0db9dc)
+            ;
+
+            
+        
+    
+        var marker_fe0ff6e90e25428b8b6be9549cbcb8bb = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_8542f79dfd2e4c39b6e61492a475a4cd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fe0ff6e90e25428b8b6be9549cbcb8bb.setIcon(icon_8542f79dfd2e4c39b6e61492a475a4cd);
+            
+    
+            var popup_d8104371d4e546f0abc1450c3dda4f13 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c47b7da5bee141efae8599ee52d9323a = $(`<div id="html_c47b7da5bee141efae8599ee52d9323a" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_d8104371d4e546f0abc1450c3dda4f13.setContent(html_c47b7da5bee141efae8599ee52d9323a);
+            
+
+            marker_fe0ff6e90e25428b8b6be9549cbcb8bb.bindPopup(popup_d8104371d4e546f0abc1450c3dda4f13)
+            ;
+
+            
+        
+    
+        var marker_f3fc0fbd56dc4af9be81400ea362e81c = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_b463c2439bcf4643ac31da2e63a70324 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f3fc0fbd56dc4af9be81400ea362e81c.setIcon(icon_b463c2439bcf4643ac31da2e63a70324);
+            
+    
+            var popup_cb1ecdc32c5b4c619f845eeb02237b31 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6ceabc8df6d54ebfb3c90b6b583c77f4 = $(`<div id="html_6ceabc8df6d54ebfb3c90b6b583c77f4" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_cb1ecdc32c5b4c619f845eeb02237b31.setContent(html_6ceabc8df6d54ebfb3c90b6b583c77f4);
+            
+
+            marker_f3fc0fbd56dc4af9be81400ea362e81c.bindPopup(popup_cb1ecdc32c5b4c619f845eeb02237b31)
+            ;
+
+            
+        
+    
+        var marker_ead938cd687c4263ba49ce471b325a59 = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_8f1bbbb440174d648b58feaf9c76e24d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ead938cd687c4263ba49ce471b325a59.setIcon(icon_8f1bbbb440174d648b58feaf9c76e24d);
+            
+    
+            var popup_fc9082fef90845c2a98e2bf860688ee6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_432f83057d88467ead84dd1d3bca9258 = $(`<div id="html_432f83057d88467ead84dd1d3bca9258" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_fc9082fef90845c2a98e2bf860688ee6.setContent(html_432f83057d88467ead84dd1d3bca9258);
+            
+
+            marker_ead938cd687c4263ba49ce471b325a59.bindPopup(popup_fc9082fef90845c2a98e2bf860688ee6)
+            ;
+
+            
+        
+    
+        var marker_093e97ba424d485b8755b72226da1151 = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_e3790900345743dcb5e2f2b593a26e09 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_093e97ba424d485b8755b72226da1151.setIcon(icon_e3790900345743dcb5e2f2b593a26e09);
+            
+    
+            var popup_76d27c66e08f47c992edc93096386763 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0eb7bec7631649ae8c19259e40708f30 = $(`<div id="html_0eb7bec7631649ae8c19259e40708f30" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_76d27c66e08f47c992edc93096386763.setContent(html_0eb7bec7631649ae8c19259e40708f30);
+            
+
+            marker_093e97ba424d485b8755b72226da1151.bindPopup(popup_76d27c66e08f47c992edc93096386763)
+            ;
+
+            
+        
+    
+        var marker_9b2fd523e705452d9d7a46e3d4ab8c48 = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_f62750ff86c142f49363c37526fee0db = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9b2fd523e705452d9d7a46e3d4ab8c48.setIcon(icon_f62750ff86c142f49363c37526fee0db);
+            
+    
+            var popup_0e7a03bdf36448bda185d6a4d215e71d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_83ebd7887b74474f940087eefe2129aa = $(`<div id="html_83ebd7887b74474f940087eefe2129aa" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_0e7a03bdf36448bda185d6a4d215e71d.setContent(html_83ebd7887b74474f940087eefe2129aa);
+            
+
+            marker_9b2fd523e705452d9d7a46e3d4ab8c48.bindPopup(popup_0e7a03bdf36448bda185d6a4d215e71d)
+            ;
+
+            
+        
+    
+        var marker_a2ca55e5b9724ddbb3f7b0355cb04ae4 = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_fd1f0ac443064268bb00cf355c2fe7a9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a2ca55e5b9724ddbb3f7b0355cb04ae4.setIcon(icon_fd1f0ac443064268bb00cf355c2fe7a9);
+            
+    
+            var popup_2f4e154e16bc4a6fb27ff9700e6b8282 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a779326dd9bc4f24b928ac604b6cf665 = $(`<div id="html_a779326dd9bc4f24b928ac604b6cf665" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_2f4e154e16bc4a6fb27ff9700e6b8282.setContent(html_a779326dd9bc4f24b928ac604b6cf665);
+            
+
+            marker_a2ca55e5b9724ddbb3f7b0355cb04ae4.bindPopup(popup_2f4e154e16bc4a6fb27ff9700e6b8282)
+            ;
+
+            
+        
+    
+        var marker_bb8f4815ad874f7e8d0e8981b72da192 = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_776115f9662748e0a48f9090eae7e32d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bb8f4815ad874f7e8d0e8981b72da192.setIcon(icon_776115f9662748e0a48f9090eae7e32d);
+            
+    
+            var popup_af5d4ac44f8f42d597de1cef244acc3f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e68f328dad324fcdbce274f16fe94a69 = $(`<div id="html_e68f328dad324fcdbce274f16fe94a69" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_af5d4ac44f8f42d597de1cef244acc3f.setContent(html_e68f328dad324fcdbce274f16fe94a69);
+            
+
+            marker_bb8f4815ad874f7e8d0e8981b72da192.bindPopup(popup_af5d4ac44f8f42d597de1cef244acc3f)
+            ;
+
+            
+        
+    
+        var marker_efafd41ad3584793bbeef764df132a93 = L.marker(
+            [49.8167003, 15.4749544],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_121bd3a5de4a4e5e9776757eeea4cdd9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_efafd41ad3584793bbeef764df132a93.setIcon(icon_121bd3a5de4a4e5e9776757eeea4cdd9);
+            
+    
+            var popup_349d5d0d8f4049039b2abbdcc7e87abb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3e138fdcd0214c5fa492d145f8093287 = $(`<div id="html_3e138fdcd0214c5fa492d145f8093287" style="width: 100.0%; height: 100.0%;">Czech Republic</div>`)[0];
+                popup_349d5d0d8f4049039b2abbdcc7e87abb.setContent(html_3e138fdcd0214c5fa492d145f8093287);
+            
+
+            marker_efafd41ad3584793bbeef764df132a93.bindPopup(popup_349d5d0d8f4049039b2abbdcc7e87abb)
+            ;
+
+            
+        
+    
+        var marker_d465653b074146b2a685d35657ae4b5b = L.marker(
+            [55.8611389, -4.2501672],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_85637ed3442e43c7b504a51c150d5133 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d465653b074146b2a685d35657ae4b5b.setIcon(icon_85637ed3442e43c7b504a51c150d5133);
+            
+    
+            var popup_3d1d2eb4defe4691a6f601cd5e5d9fcf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_61ecc5f72bde4bf0b35d3c536fbe397d = $(`<div id="html_61ecc5f72bde4bf0b35d3c536fbe397d" style="width: 100.0%; height: 100.0%;">Glasgow, Scotland, UK</div>`)[0];
+                popup_3d1d2eb4defe4691a6f601cd5e5d9fcf.setContent(html_61ecc5f72bde4bf0b35d3c536fbe397d);
+            
+
+            marker_d465653b074146b2a685d35657ae4b5b.bindPopup(popup_3d1d2eb4defe4691a6f601cd5e5d9fcf)
+            ;
+
+            
+        
+    
+        var marker_686046f238264c64bc85717973b813cb = L.marker(
+            [43.2425289, -79.9470423],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_95ff7815fc6f43a3a1eb5bc62c37005b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_686046f238264c64bc85717973b813cb.setIcon(icon_95ff7815fc6f43a3a1eb5bc62c37005b);
+            
+    
+            var popup_40723c12a66740fb9902359478b00026 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a48ad069b63344cfae85d323a1124e88 = $(`<div id="html_a48ad069b63344cfae85d323a1124e88" style="width: 100.0%; height: 100.0%;">Hamilton, Ontario, Canada</div>`)[0];
+                popup_40723c12a66740fb9902359478b00026.setContent(html_a48ad069b63344cfae85d323a1124e88);
+            
+
+            marker_686046f238264c64bc85717973b813cb.bindPopup(popup_40723c12a66740fb9902359478b00026)
+            ;
+
+            
+        
+    
+        var marker_d515622242444c068e73323a82ed6143 = L.marker(
+            [51.5073219, -0.1276474],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_e9fabbd3561644db86b7cd73f9026f28 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d515622242444c068e73323a82ed6143.setIcon(icon_e9fabbd3561644db86b7cd73f9026f28);
+            
+    
+            var popup_af4a0dd484fb4c18bd2c3dbe4b42ba5c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_099fc23d22434c10b9e3daad6260a065 = $(`<div id="html_099fc23d22434c10b9e3daad6260a065" style="width: 100.0%; height: 100.0%;">London, England, UK</div>`)[0];
+                popup_af4a0dd484fb4c18bd2c3dbe4b42ba5c.setContent(html_099fc23d22434c10b9e3daad6260a065);
+            
+
+            marker_d515622242444c068e73323a82ed6143.bindPopup(popup_af4a0dd484fb4c18bd2c3dbe4b42ba5c)
+            ;
+
+            
+        
+    
+        var marker_94425c36fa9343e1807a429af2cf39b9 = L.marker(
+            [51.083333, -1.166667],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_2ac33dff81c044e9b664bbcb5d2561f5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_94425c36fa9343e1807a429af2cf39b9.setIcon(icon_2ac33dff81c044e9b664bbcb5d2561f5);
+            
+    
+            var popup_a26966a6a04b420e9627ace366fe6250 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_526ced5554374d4a8962365ec8856530 = $(`<div id="html_526ced5554374d4a8962365ec8856530" style="width: 100.0%; height: 100.0%;">Hampshire, England, UK</div>`)[0];
+                popup_a26966a6a04b420e9627ace366fe6250.setContent(html_526ced5554374d4a8962365ec8856530);
+            
+
+            marker_94425c36fa9343e1807a429af2cf39b9.bindPopup(popup_a26966a6a04b420e9627ace366fe6250)
+            ;
+
+            
+        
+    
+        var marker_b3959df7e825483c9e55fb42c3aac392 = L.marker(
+            [51.4816929, -0.125608301180254],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_727c816c8c274e84ac0f433d37d6ec94 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b3959df7e825483c9e55fb42c3aac392.setIcon(icon_727c816c8c274e84ac0f433d37d6ec94);
+            
+    
+            var popup_0836d4b2d48b46e4bd5ebba4b56eda7a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7f520f162b2745dbad6108444da16138 = $(`<div id="html_7f520f162b2745dbad6108444da16138" style="width: 100.0%; height: 100.0%;">The Vauxhall Griffin, Vauxhall, London, England, UK</div>`)[0];
+                popup_0836d4b2d48b46e4bd5ebba4b56eda7a.setContent(html_7f520f162b2745dbad6108444da16138);
+            
+
+            marker_b3959df7e825483c9e55fb42c3aac392.bindPopup(popup_0836d4b2d48b46e4bd5ebba4b56eda7a)
+            ;
+
+            
+        
+    
+        var marker_e324cbc52b9e4563b8e18abc63379f52 = L.marker(
+            [51.50372505, -0.113708857972039],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_a4090b2857af45d2a9a4175893555ba0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e324cbc52b9e4563b8e18abc63379f52.setIcon(icon_a4090b2857af45d2a9a4175893555ba0);
+            
+    
+            var popup_96bdd2649321452ca510df9ad4926b0c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9bc2378d50284b418ca1ad55df7d3947 = $(`<div id="html_9bc2378d50284b418ca1ad55df7d3947" style="width: 100.0%; height: 100.0%;">Waterloo Station, Waterloo, London, England, UK</div>`)[0];
+                popup_96bdd2649321452ca510df9ad4926b0c.setContent(html_9bc2378d50284b418ca1ad55df7d3947);
+            
+
+            marker_e324cbc52b9e4563b8e18abc63379f52.bindPopup(popup_96bdd2649321452ca510df9ad4926b0c)
+            ;
+
+            
+        
+    
+        var marker_c4528541d7f14391ab6b4e0887cee86d = L.marker(
+            [51.55598385, -0.279578918281401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_8e13e832c1704dfa91b93c5092d79b3b);
+        
+    
+
+                var icon_880816f862f14675b7d7c1365542ba57 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c4528541d7f14391ab6b4e0887cee86d.setIcon(icon_880816f862f14675b7d7c1365542ba57);
+            
+    
+            var popup_04ef858030c343dab54df53ea68265d7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_83fc54b1701f40d5a95549b6b27eaf22 = $(`<div id="html_83fc54b1701f40d5a95549b6b27eaf22" style="width: 100.0%; height: 100.0%;">Wembley Stadium, Wembley, London, England, UK</div>`)[0];
+                popup_04ef858030c343dab54df53ea68265d7.setContent(html_83fc54b1701f40d5a95549b6b27eaf22);
+            
+
+            marker_c4528541d7f14391ab6b4e0887cee86d.bindPopup(popup_04ef858030c343dab54df53ea68265d7)
+            ;
+
+            
+        
+    
+            var feature_group_25a47ce795d44d909d7dc09f56f6d071 = L.featureGroup(
+                ).addTo(map_6f0f925cc0d34e5594e6da82afdc156d);
+        
+    
+        var marker_2d07de3ae8fe427a8684dc5f4ce1c15b = L.marker(
+            [-23.9471539, -46.3254357],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_d1a922edeb6043debcbe768b31475263 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_2d07de3ae8fe427a8684dc5f4ce1c15b.setIcon(icon_d1a922edeb6043debcbe768b31475263);
+            
+    
+            var popup_1004ad4f22694ac981a220b09aabd516 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9cf60356e53241eab12d6da58323c617 = $(`<div id="html_9cf60356e53241eab12d6da58323c617" style="width: 100.0%; height: 100.0%;">Canal 3, Santos, SP, Brazil</div>`)[0];
+                popup_1004ad4f22694ac981a220b09aabd516.setContent(html_9cf60356e53241eab12d6da58323c617);
+            
+
+            marker_2d07de3ae8fe427a8684dc5f4ce1c15b.bindPopup(popup_1004ad4f22694ac981a220b09aabd516)
+            ;
+
+            
+        
+    
+        var marker_46ca03044dee46898081fbca7d470e9c = L.marker(
+            [34.1729044, -118.3740371],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_7e55383415394287aa0ba85d71c63cf9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46ca03044dee46898081fbca7d470e9c.setIcon(icon_7e55383415394287aa0ba85d71c63cf9);
+            
+    
+            var popup_b9b394485964405ca43f17d3c463f76c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b4d22a3d43e24791beda27e28e0c99ae = $(`<div id="html_b4d22a3d43e24791beda27e28e0c99ae" style="width: 100.0%; height: 100.0%;">North Hollywood, Los Angeles, California, USA</div>`)[0];
+                popup_b9b394485964405ca43f17d3c463f76c.setContent(html_b4d22a3d43e24791beda27e28e0c99ae);
+            
+
+            marker_46ca03044dee46898081fbca7d470e9c.bindPopup(popup_b9b394485964405ca43f17d3c463f76c)
+            ;
+
+            
+        
+    
+        var marker_b059b7f44dfc48d9b56a4ed8bddea869 = L.marker(
+            [34.0536834, -118.2427669],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_10631f7eb36f46069576474aa243222c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b059b7f44dfc48d9b56a4ed8bddea869.setIcon(icon_10631f7eb36f46069576474aa243222c);
+            
+    
+            var popup_11d17cbe0bae4487a81f936bd9ea2eb6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de189cf091f34b258f7ddbfc34206a9c = $(`<div id="html_de189cf091f34b258f7ddbfc34206a9c" style="width: 100.0%; height: 100.0%;">Los Angeles, California, USA</div>`)[0];
+                popup_11d17cbe0bae4487a81f936bd9ea2eb6.setContent(html_de189cf091f34b258f7ddbfc34206a9c);
+            
+
+            marker_b059b7f44dfc48d9b56a4ed8bddea869.bindPopup(popup_11d17cbe0bae4487a81f936bd9ea2eb6)
+            ;
+
+            
+        
+    
+        var marker_3eaab53ed4ad41958c72301c8b27ba74 = L.marker(
+            [46.5286176, 10.4532056],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_95c5dcd7990d450da2ae6414e6547ae9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3eaab53ed4ad41958c72301c8b27ba74.setIcon(icon_95c5dcd7990d450da2ae6414e6547ae9);
+            
+    
+            var popup_495f197cee9d463bafe4ca8905059886 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5e1c251afd05440288a7bcb14406a099 = $(`<div id="html_5e1c251afd05440288a7bcb14406a099" style="width: 100.0%; height: 100.0%;">Passo dello Stelvio, South Tyrol, Italy</div>`)[0];
+                popup_495f197cee9d463bafe4ca8905059886.setContent(html_5e1c251afd05440288a7bcb14406a099);
+            
+
+            marker_3eaab53ed4ad41958c72301c8b27ba74.bindPopup(popup_495f197cee9d463bafe4ca8905059886)
+            ;
+
+            
+        
+    
+        var marker_a45f8c429ebf4f939a23f179fe26a80c = L.marker(
+            [51.3201891, -0.5564726],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_9b7bb3bfada1486f83cfadd8964abbea = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a45f8c429ebf4f939a23f179fe26a80c.setIcon(icon_9b7bb3bfada1486f83cfadd8964abbea);
+            
+    
+            var popup_fb72a63195b44a31988f5b4777543913 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_300d5f2c99d941a6937394f81b33e471 = $(`<div id="html_300d5f2c99d941a6937394f81b33e471" style="width: 100.0%; height: 100.0%;">Woking, Surrey, England, UK</div>`)[0];
+                popup_fb72a63195b44a31988f5b4777543913.setContent(html_300d5f2c99d941a6937394f81b33e471);
+            
+
+            marker_a45f8c429ebf4f939a23f179fe26a80c.bindPopup(popup_fb72a63195b44a31988f5b4777543913)
+            ;
+
+            
+        
+    
+        var marker_0b3537a57e6b4899895ec71a5946eb27 = L.marker(
+            [23.99764435, 53.6439097569213],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_95659e36b2864daeaa6f6055d77d6161 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0b3537a57e6b4899895ec71a5946eb27.setIcon(icon_95659e36b2864daeaa6f6055d77d6161);
+            
+    
+            var popup_04fb73307bd34ac6b32a3b5b2bb342a2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_08fa7eff1cc9405dba233f5f46b40998 = $(`<div id="html_08fa7eff1cc9405dba233f5f46b40998" style="width: 100.0%; height: 100.0%;">Abu Dhabi, United Arab Emirates</div>`)[0];
+                popup_04fb73307bd34ac6b32a3b5b2bb342a2.setContent(html_08fa7eff1cc9405dba233f5f46b40998);
+            
+
+            marker_0b3537a57e6b4899895ec71a5946eb27.bindPopup(popup_04fb73307bd34ac6b32a3b5b2bb342a2)
+            ;
+
+            
+        
+    
+        var marker_3b59ddffb4b24ccea35d8bfd6cce1db5 = L.marker(
+            [36.9749416, -122.0285259],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_fc749af3a78645f29ca08d8564b099c1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3b59ddffb4b24ccea35d8bfd6cce1db5.setIcon(icon_fc749af3a78645f29ca08d8564b099c1);
+            
+    
+            var popup_182c9f934e444ef7a70ce948ec1017ee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1d7023c0c4354000a74e06223b998c7d = $(`<div id="html_1d7023c0c4354000a74e06223b998c7d" style="width: 100.0%; height: 100.0%;">Santa Cruz, California, USA</div>`)[0];
+                popup_182c9f934e444ef7a70ce948ec1017ee.setContent(html_1d7023c0c4354000a74e06223b998c7d);
+            
+
+            marker_3b59ddffb4b24ccea35d8bfd6cce1db5.bindPopup(popup_182c9f934e444ef7a70ce948ec1017ee)
+            ;
+
+            
+        
+    
+        var marker_4bd649ea3ca849e1b8e1c13d7fd7865d = L.marker(
+            [40.7308619, -73.9871558],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_c489a55e9f384375a7bfc47319e546ac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4bd649ea3ca849e1b8e1c13d7fd7865d.setIcon(icon_c489a55e9f384375a7bfc47319e546ac);
+            
+    
+            var popup_375fe6a7e1c44ab98f9c838ec68f76e2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ee9da1faa2714dfb9b05945a031408e2 = $(`<div id="html_ee9da1faa2714dfb9b05945a031408e2" style="width: 100.0%; height: 100.0%;">New York City, New York, USA</div>`)[0];
+                popup_375fe6a7e1c44ab98f9c838ec68f76e2.setContent(html_ee9da1faa2714dfb9b05945a031408e2);
+            
+
+            marker_4bd649ea3ca849e1b8e1c13d7fd7865d.bindPopup(popup_375fe6a7e1c44ab98f9c838ec68f76e2)
+            ;
+
+            
+        
+    
+        var marker_b21669c70ca144b7b50dba17feba9423 = L.marker(
+            [51.4816929, -0.125608301180254],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_010f8fa3705d41b5bad9359903b0da7e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b21669c70ca144b7b50dba17feba9423.setIcon(icon_010f8fa3705d41b5bad9359903b0da7e);
+            
+    
+            var popup_55d4ff2271314649842a5d707bfeb305 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1bdd944b4a31409ca4d9ad4d1a404eda = $(`<div id="html_1bdd944b4a31409ca4d9ad4d1a404eda" style="width: 100.0%; height: 100.0%;">The Vauxhall Griffin, Vauxhall, London, England, UK</div>`)[0];
+                popup_55d4ff2271314649842a5d707bfeb305.setContent(html_1bdd944b4a31409ca4d9ad4d1a404eda);
+            
+
+            marker_b21669c70ca144b7b50dba17feba9423.bindPopup(popup_55d4ff2271314649842a5d707bfeb305)
+            ;
+
+            
+        
+    
+        var marker_95b1b166ffa14d97ac84c2a02ade398a = L.marker(
+            [51.50372505, -0.113708857972039],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_91f3bda994dc4fc0aef744ac4e4ac42d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_95b1b166ffa14d97ac84c2a02ade398a.setIcon(icon_91f3bda994dc4fc0aef744ac4e4ac42d);
+            
+    
+            var popup_b85dde3ef42d44c399298a97c89e3353 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d779694c52174783b77faae18d2210f2 = $(`<div id="html_d779694c52174783b77faae18d2210f2" style="width: 100.0%; height: 100.0%;">Waterloo Station, Waterloo, London, England, UK</div>`)[0];
+                popup_b85dde3ef42d44c399298a97c89e3353.setContent(html_d779694c52174783b77faae18d2210f2);
+            
+
+            marker_95b1b166ffa14d97ac84c2a02ade398a.bindPopup(popup_b85dde3ef42d44c399298a97c89e3353)
+            ;
+
+            
+        
+    
+        var marker_659a435d58d34e7c8db50e1aff754212 = L.marker(
+            [51.55598385, -0.279578918281401],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(feature_group_25a47ce795d44d909d7dc09f56f6d071);
+        
+    
+
+                var icon_b4bbb5ab7ea8485f843c5dbb4863a2e3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_659a435d58d34e7c8db50e1aff754212.setIcon(icon_b4bbb5ab7ea8485f843c5dbb4863a2e3);
+            
+    
+            var popup_d973bc0a7cbc421581852350bbc0b8cb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b075f87c2b88415196c035e679294689 = $(`<div id="html_b075f87c2b88415196c035e679294689" style="width: 100.0%; height: 100.0%;">Wembley Stadium, Wembley, London, England, UK</div>`)[0];
+                popup_d973bc0a7cbc421581852350bbc0b8cb.setContent(html_b075f87c2b88415196c035e679294689);
+            
+
+            marker_659a435d58d34e7c8db50e1aff754212.bindPopup(popup_d973bc0a7cbc421581852350bbc0b8cb)
+            ;
+
+            
+        
+</script>
