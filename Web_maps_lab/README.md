@@ -12,3 +12,9 @@ All locations are divided into three groups: "busy", with the green color,
 "casual" with orange and "lazy" with red.
 The location is "busy" if there were filmed more than 10 films that year,
 "casual" - more than five, "lazy" - less than six.
+
+##Known issues
+Some of the locations in ```loctions.list``` does not 
+satisfy ```geopy``` requirements
+Depending on the ammount of places to show, and your 
+network speed, it may take a long time to load.
