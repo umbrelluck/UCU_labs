@@ -6,6 +6,14 @@ from geopy.extra.rate_limiter import RateLimiter
 
 
 def readFile(year, path="locations.list"):
+    """
+    :param year: int
+    :param path: str
+    :return: dict
+
+    Reads from path films produced in year
+    In return dictionary key is place(street, city), value is list of films
+    """
     diction = {}
     count = 0
     with open(path, "r", errors="replace") as input_file:
@@ -27,14 +35,6 @@ def readFile(year, path="locations.list"):
                 else:
                     diction[place] = [tmp[0][:ind]]
     return diction
-
-
-def colorPicker(num):
-    if num > 10:
-        return "green"
-    elif num > 5:
-        return "yellow"
-    return "red"
 
 
 if __name__ == "__main__":
