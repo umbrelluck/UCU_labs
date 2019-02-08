@@ -7,7 +7,7 @@ Run module ```Map_final.py``` and chose year and maximum ammount of
 locations to be displayed on the map. It will be saved in ```Films_map.html```
 To view it simply open created html file.
 
-# What can be seen
+## What can be seen
 All locations are divided into three groups: "busy", with the green color, 
 "casual" with orange and "lazy" with red.
 The location is "busy" if there were filmed more than 10 films that year,
