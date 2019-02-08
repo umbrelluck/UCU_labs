@@ -46,14 +46,19 @@ if __name__ == "__main__":
 
     mapMov = folium.Map(tiles="Mapbox Control Room")
     fg_busy = folium.FeatureGroup(name="Busy")
-    fg_norm = folium.FeatureGroup(name="Normal")
-    fg_un = folium.FeatureGroup(name="Unknown")
+    fg_norm = folium.FeatureGroup(name="Casual")
+    fg_un = folium.FeatureGroup(name="Lazy")
 
     for loc in places:
         print("Working on task " + str(VisualIndex) + "....")
         VisualIndex += 1
         try:
-            location = geolocator.geocode(loc)
+            tmp = loc.split(", ")
+            if len(tmp)>3:
+                loc2 = tmp[-3] + ", " + tmp[-2] + ", " + tmp[-1]
+                location = geolocator.geocode(loc2)
+            else:
+                location = geolocator.geocode(loc)
             if location is None:
                 ErrorLogs.append("InvalidGeopy::InvalidLocation::" + loc + "\n")
                 continue
@@ -66,7 +71,7 @@ if __name__ == "__main__":
             elif len(places[loc]) > 5:
                 fg_norm.add_child(
                     folium.Marker(location=[location.latitude, location.longitude], popup=films,
-                                  icon=folium.Icon(icon="cloud", color="yellow")))
+                                  icon=folium.Icon(icon="cloud", color="orange")))
             else:
                 fg_un.add_child(
                     folium.Marker(location=[location.latitude, location.longitude], popup=films,
@@ -90,6 +95,6 @@ if __name__ == "__main__":
     mapMov.add_child(fg_un)
     mapMov.add_child(fg_pp)
     mapMov.add_child(folium.LayerControl())
-    mapMov.save('Map_ready.html')
+    mapMov.save('Films_map.html')
     for error in ErrorLogs:
         print(error)
