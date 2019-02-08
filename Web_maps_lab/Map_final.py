@@ -89,6 +89,7 @@ if __name__ == "__main__":
     mapMov.add_child(fg_busy)
     mapMov.add_child(fg_un)
     mapMov.add_child(fg_pp)
+    mapMov.add_child(folium.LayerControl())
     mapMov.save('Map_ready.html')
     for error in ErrorLogs:
         print(error)
