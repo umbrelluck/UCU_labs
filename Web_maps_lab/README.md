@@ -1,4 +1,4 @@
-#Films data
+#Filming locations
 Python modules used to build a map which represents places
 of filming films from IMDB database, represented by locations.list
 
