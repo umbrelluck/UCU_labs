@@ -20,11 +20,11 @@ Depending on the ammount of places to show, and your
 network speed, it may take a long time to load.
 
 ## Meaning and usage of tags in ```html``` file
-  ```<DOCTYPE html>``` -
-  ```<head>``` - container for metadata (data about data) and is placed between the <html> tag and the <body> tag
-  ```<meta>``` -
-  ```<script>``` -
-```<link>``` -
-```<style>``` -
-```<body>``` -
-```<div>``` -
+```<!DOCTYPE html>``` - is not an HTML tag; it is an instruction to the web browser about what version of HTML the page is written in <br />
+```<head>``` - container for metadata (data about data) and is placed between the <html> tag and the <body> tag <br />
+```<meta>``` - provides metadata about the HTML document<br />
+```<script>``` - s used to define a client-side script (JavaScript)<br />
+```<link>``` - defines a link between a document and an external resource<br />
+```<style>``` - used to add CSS style rules to an HTML document<br />
+```<body>``` - defines the main content of the HTML document or the section of the HTML document that will be directly visible on web page<br />
+```<div>``` - efines a division or a section in an HTML document<br />
