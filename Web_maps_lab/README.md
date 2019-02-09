@@ -12,6 +12,8 @@
   ```casual``` with orange and ```lazy``` with red.
   The location is ```busy``` if there were filmed more than 10 films that year,
   ```casual``` - more than five, ```lazy``` - less than six.
+  The accuracy of locations is calculated as city, state (if available) and country. If streets are provided, ```Map_final.py``` will simply ignore them.
+  There is a posibility to switch between layers, representing types of locations, mentioned above.
 
 ## Known issues
   Some of the locations in ```loctions.list``` does not 
@@ -28,5 +30,3 @@
   ```<style>``` - used to add CSS style rules to an HTML document<br />
   ```<body>``` - defines the main content of the HTML document or the section of the HTML document that will be directly         visible on web page<br />
   ```<div>``` - efines a division or a section in an HTML document<br />
-## Conclusion
-  
